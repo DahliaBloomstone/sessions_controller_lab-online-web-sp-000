@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   def new
   end
 
+#log in flow
   def create
     if params[:name] == "" || params[:name] == nil
       redirect_to login_path
@@ -11,6 +12,7 @@ class SessionsController < ApplicationController
     end
   end
 
+#log out flwo 
   def destroy
     if session[:name]
       session.delete :name
