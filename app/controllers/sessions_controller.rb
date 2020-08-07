@@ -11,7 +11,8 @@ end
 
 #log out flow:
 def destroy
-  session.delete :username
+  session.delete :name
+
 end
 
 end
