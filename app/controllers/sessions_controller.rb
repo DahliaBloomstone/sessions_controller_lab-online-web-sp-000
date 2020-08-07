@@ -6,7 +6,8 @@ def new
 #log in flow:
 def create
   if params [:name] == "" || params[:name] == nil
-redirect_to login_path 
+redirect_to login_path
+else 
     session[:name] = params[:name]
   redirect_to '/'
 end
