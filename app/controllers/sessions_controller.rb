@@ -11,7 +11,7 @@ else
     session[:name] = params[:name]
   redirect_to '/'
 end
-
+end 
 #log out flow:
 def destroy
   if session[:name]
