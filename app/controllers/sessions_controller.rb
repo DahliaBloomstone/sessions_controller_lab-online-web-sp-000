@@ -18,7 +18,6 @@ def destroy
   session.delete :name
 end
 redirect_to '/'
-
 end
 
 end
