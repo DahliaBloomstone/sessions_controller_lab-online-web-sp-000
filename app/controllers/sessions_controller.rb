@@ -16,3 +16,6 @@ def destroy
 end
 
 end
+
+
+# rails generate controller Sessions new --no-helper --no-assets --no-test-framework --skip-routes --skip
