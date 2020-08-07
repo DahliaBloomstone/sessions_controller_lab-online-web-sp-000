@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
     end
   end
 
-#log out flwo 
+#log out flow
   def destroy
     if session[:name]
       session.delete :name
