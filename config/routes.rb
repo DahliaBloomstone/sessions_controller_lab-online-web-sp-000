@@ -10,3 +10,10 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
 end
+
+
+#The user GETs /login
+# The user enters their username. There is no password.
+# The user submits the form, POSTing to /login.
+# In the create action of the SessionsController we set a cookie on the user's browser by writing their username into the session hash.
+# Thereafter, the user is logged in. session[:username] will hold their username.
