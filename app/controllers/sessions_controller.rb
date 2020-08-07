@@ -5,7 +5,7 @@ def new
 
 #log in flow:
 def create
-  session[:username] = params[:username]
+  session[:name] = params[:name]
   redirect_to '/'
 end
 
